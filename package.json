@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://ou-disc.github.io/palestinian-archive/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
