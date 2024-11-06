@@ -1,7 +1,7 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 import routes from "@/navigation/routes";
-import Navigation from "./components/ui/navigation";
+import Navigation from "./components/ui/Navigation";
 
 function App() {
   return (
