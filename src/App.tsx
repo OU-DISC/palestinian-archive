@@ -6,7 +6,7 @@ import Navigation from "./components/ui/Navigation";
 function App() {
   return (
     <HashRouter>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen">
         <Navigation />
         <main>
           <Routes>
