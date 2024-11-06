@@ -1,5 +1,7 @@
 import { FC } from "react";
 import Home from "./screens/Home";
+import Page1 from "./screens/Page1";
+import Page2 from "./screens/Page2";
 
 interface RouteConfig {
   path: string;
@@ -9,8 +11,8 @@ interface RouteConfig {
 
 const routes: RouteConfig[] = [
   { path: "/", label: "Home", component: Home },
-  { path: "/", label: "Page 1", component: Home },
-  { path: "/", label: "Page 2", component: Home },
+  { path: "/", label: "Page 1", component: Page1 },
+  { path: "/", label: "Page 2", component: Page2 },
 ];
 
 export default routes;

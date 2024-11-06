@@ -7,29 +7,25 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import routes from "@/navigation/routes";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Navigation() {
+  const navigate = useNavigate();
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Palestinian Archive
           </Typography>
 
           {routes.map((r) => (
-            <Button>
-              <Link to={r.path}>{r.label}</Link>
+            <Button
+              key={r.path}
+              color="inherit"
+              onClick={() => navigate(r.path)}
+            >
+              {r.label}
             </Button>
           ))}
         </Toolbar>
