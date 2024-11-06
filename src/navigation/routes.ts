@@ -11,8 +11,8 @@ interface RouteConfig {
 
 const routes: RouteConfig[] = [
   { path: "/", label: "Home", component: Home },
-  { path: "/", label: "Page 1", component: Page1 },
-  { path: "/", label: "Page 2", component: Page2 },
+  { path: "/page1", label: "Page 1", component: Page1 },
+  { path: "/page2", label: "Page 2", component: Page2 },
 ];
 
 export default routes;
