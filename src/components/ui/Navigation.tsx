@@ -13,7 +13,7 @@ export default function Navigation() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Palestinian Archive
+            Palestinian Children Archive
           </Typography>
 
           {routes.map((r) => (
